@@ -137,6 +137,8 @@ R_API bool r_sandbox_check(int mask) {
 }
 
 R_API bool r_sandbox_enable(bool e) {
+	return false;
+
 	if (G_enabled) {
 		if (!e) {
 			// R_LOG_ERROR ("Can't disable sandbox");
