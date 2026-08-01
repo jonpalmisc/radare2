@@ -196,6 +196,8 @@ R_API bool r_sandbox_check_localhost(const char *str) {
 }
 
 R_API bool r_sandbox_enable(bool e) {
+	return false;
+
 	if (G_enabled) {
 		if (!e) {
 			// R_LOG_ERROR ("Can't disable sandbox");
